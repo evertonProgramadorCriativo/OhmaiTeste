@@ -1,0 +1,213 @@
+ 
+ .formBackgroundImage {
+    background-image: linear-gradient(105deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 50%, transparent 50%),url(../img/img-escritorio-institucional.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;  
+
+ }
+
+ .bacCor{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,39,233,1) 0%, rgba(0,212,255,1) 100%);
+ }
+ 
+
+.search {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(39,39,233,1) 0%, rgba(0,212,255,1) 100%);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.25rem;
+}
+.search__input:focus {
+    outline: none;
+    width: 100%;
+    background-color: rgb(0, 0, 134) ;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: rgb(248, 248, 248);
+}
+
+
+.search__input:focus + .search__button {
+    border: none;
+    background-color: transparent ;
+    color: #fff;
+}
+
+.search__button {
+    border: none;
+    background-color: rgba(39,39,233,1)  ;
+}
+.search__button:focus {
+        outline: none;
+      
+    }
+.search__button:active {
+        transform: translateY(2px);
+    }
+
+
+.search__button {
+    border: none;
+    background-color: transparent ;
+}
+
+
+.search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+
+.whiteOutputBox{
+    background-color: #fff;
+    border: 3px solid black;
+    height: 100%;
+    width: 100%;
+    padding: 80px;
+    margin: 30px 0;
+    margin-right: -3rem;
+    position: relative;
+    left: 15px;
+}
+
+
+.user-nav {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+}
+
+.user-nav__icon-box {
+    position: relative;
+}
+
+.user-nav > * {
+    padding: 0 1.2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 138px;
+
+}
+
+
+.user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: #000;
+}
+
+
+.user-nav__notification {
+     border-radius: 50%;
+    background-color: rgb(71, 98, 255);
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    height: 1.2rem;
+    width: 1.3rem;
+}
+
+.user-nav__icon-box {
+    position: relative;
+}
+
+
+.user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.user-nav__user-photo {
+    height: 2.8rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    color: #000;
+}
+
+.user-nav__user-name{
+    font-size: 12px;
+    color: #000;
+}
+
+
+#name,
+#name:link,
+#name:visited{
+    font-family: "Red Rose", cursive;
+    font-weight: 400;
+    line-height: 1.2px;
+    font-size: 17.8px;
+    height: 2.8rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+#email {
+    font-family: "Red Rose", cursive;
+    font-weight: 400;
+    line-height: 1.2px;
+    font-size: 17.8px;
+    height: 2.8rem;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+#telefone {
+    font-family: "Red Rose", cursive;
+    font-weight: 400;
+    line-height: 1.2px;
+    font-size: 17.8px;
+    height: 2.8rem;
+    cursor: pointer;
+}
+
+.textH1 {
+    font-family: 'Rowdies', cursive;
+    font-weight: Bold;
+    line-height: 1.2px;
+    font-size: 47.8px;
+    height: 2.8rem;
+    position: relative;
+    left: 93px;
+    top: 18px;
+}
+
+.textH2 {
+    font-family: 'Rowdies', cursive;
+    font-weight: Bold;
+    line-height: 1.2px;
+    font-size: 47.8px;
+    height: 2.8rem;
+    position: relative;
+    left: 403px;
+    top: 101px;
+    z-index: 88;
+}
