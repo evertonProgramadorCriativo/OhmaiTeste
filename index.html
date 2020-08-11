@@ -10,6 +10,8 @@
   <!--------------->
 
   <link rel="stylesheet" href="./Css/styles.css" />
+  <!--Media--Screen-->
+  <link rel="stylesheet" href="./Css/MediaScreen.css" />
 
   <!------------------>
   <!-- BOOTSTRAP CSS-->
@@ -22,9 +24,9 @@
   <!--FONT AWESOME iCON -->
   <!---------------------->
 
- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
- 
+
   <!---------------->
   <!--Fonts Google-->
   <!---------------->
@@ -40,43 +42,43 @@
 
   <link rel="shortcut icon" type="image/png" href="./img/logoprincipal.png">
 </head>
-  <!----------------------------->
-  <!--loading reading functions-->
-  <!----------------------------->
+<!----------------------------->
+<!--loading reading functions-->
+<!----------------------------->
 
-<body onload="Read_Name(),Read_Telefone(),
-Read_Email()" class="bacCor text-white">
+<body class="bacCor text-white">
 
   <!---------->
   <!--Navbar-->
   <!---------->
-<nav class="navbar bg-white ">
-    <div class="row">
-      <div class="col-4">
+  <header class="navbar bg-white col-sm-12">
 
-  <!---------->
-  <!--Logo---->
-  <!---------->
 
-        <a href="#" class="navbar-brand text-white">
+    <div class="container-fluid">
+      <div class="row">
+        <!---------->
+        <!--Logo---->
+        <!---------->
+
+        <a href="#" class="navbar-brand linkLogo col-lg-3 col-md-6 col-sm-12">
           <img src="./img/logo.png" alt="#" class="logo">
         </a>
-      </div>
-      <div class="col-8 d-flex">
-  <!---------------->
-  <!--Input--Seach-->
-  <!---------------->
 
-        <form action="#" class="search">
+
+        <!---------------->
+        <!--Input--Seach-->
+        <!---------------->
+
+        <form action="#" class="search col-lg-4 col-md-6 col-sm-12">
           <input type="text" class="search__input" placeholder="Pesquisar">
           <button class="search__button">
             <i class="fas fa-search search__icon"></i>
           </button>
         </form>
-  <!-------------------->
-  <!--Icones--Custom---->
-  <!-------------------->
-        <nav class="user-nav">
+        <!-------------------->
+        <!--Icones--Custom---->
+        <!-------------------->
+        <nav class="user-nav col-lg-4 col-md-12 col-sm-12 ">
           <div class="user-nav__icon-box">
 
             <i class="far fa-bookmark user-nav__icon"></i>
@@ -86,9 +88,9 @@ Read_Email()" class="bacCor text-white">
             <i class="fas fa-comments user-nav__icon"></i>
             <span class="user-nav__notification">2</span>
           </div>
-  <!-------------------->
-  <!--User---->
-  <!-------------------->
+          <!-------------------->
+          <!--User---->
+          <!-------------------->
 
           <div class="user-nav__user">
             <img src="./img/empresario.jpg" alt="User photo" class="user-nav__user-photo">
@@ -97,19 +99,22 @@ Read_Email()" class="bacCor text-white">
         </nav>
 
       </div>
+
     </div>
-  </nav>
+  </header>
+
   <br />
+
 
   <div class="container">
     <div class="row">
       <div class="col-12">
-  <!------------------------->
-  <!--Input-telephone book--->
-  <!------------------------->
+        <!------------------------->
+        <!--Input-telephone book--->
+        <!------------------------->
         <form class="border border-info p-3 formBackgroundImage" id="form">
           <h1 class="text-primary textH1">Agenda Telefônica</h1>
-          <div class="form-group container ">
+          <div class="form-group container">
 
             <label class="text-primary"><i class="fas fa-user p-2"></i>Nome</label>
             <input type="text" required autocomplete="off" class="form-control col-5 text-primary" id="name"
@@ -125,9 +130,9 @@ Read_Email()" class="bacCor text-white">
             <input type="number" required autocomplete="off" class="form-control col-5 text-primary" id="telefone"
               placeholder="Digite seu telefone" />
 
-  <!------------------------------->
-  <!--Input-telephone book-Button-->
-  <!------------------------------->
+            <!------------------------------->
+            <!--Input-telephone book-Button-->
+            <!------------------------------->
 
 
             <button type="submit" class="btn btn-primary mt-3">
@@ -140,30 +145,31 @@ Read_Email()" class="bacCor text-white">
       </div>
       </form>
     </div>
-       <!--------------------->
-      <!--Information output-->
-      <!---------------------->
+   
+    <!--------------------->
+    <!--Information output-->
+    <!---------------------->
 
     <div class="container">
       <h2 class="text-primary textH2">Resultado</h2>
-            <div class="row whiteOutputBox">
-              <div class="col">
-                    <div id="nameIdentity"></div>
-                  </div>
-                  <div class="col">
-                    <div id="telefoneIdentity"></div>
-                  </div>
-                  <div class="col">
-                    <div id="emailIdentity"></div>
-                  </div>
-            </div>
+      <div class="row whiteOutputBox">
+        <div class="col">
+          <div id="nameIdentity"></div>
+        </div>
+        <div class="col">
+          <div id="telefoneIdentity"></div>
+        </div>
+        <div class="col">
+          <div id="emailIdentity"></div>
+        </div>
+      </div>
     </div>
   </div>
   </div>
 
-<!----------------->
-<!--boostrap Jquery-->
-<!----------------->
+  <!----------------->
+  <!--boostrap Jquery-->
+  <!----------------->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -175,9 +181,9 @@ Read_Email()" class="bacCor text-white">
     integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
     crossorigin="anonymous"></script>
 
-    <!----------------->
-    <!-- Javascript --> 
-    <!----------------->
+  <!----------------->
+  <!-- Javascript -->
+  <!----------------->
 
   <script src="./js/main.js"></script>
   <script src="./js/telefone.js"></script>

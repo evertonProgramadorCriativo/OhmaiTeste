@@ -13,6 +13,9 @@ document.getElementById("form").addEventListener("submit", e => {
   Read_Telefone();
   document.getElementById("form").reset();
 });
-
-
-
+ 
+/********************** */
+//executing the functions
+/***********************/
+Read_Name(),Read_Telefone(),
+Read_Email()
